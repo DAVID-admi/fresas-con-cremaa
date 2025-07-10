@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fresas con Crema</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    html { scroll-behavior: smooth; }
+  </style>
+</head>
+<body class="bg-gradient-to-b from-pink-50 to-white font-sans text-gray-800">
+
+  <!-- NAVBAR -->
+  <header class="bg-white shadow-md sticky top-0 z-50">
+    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+      <h1 class="text-2xl font-bold text-pink-600">FresasDelicias 🍓</h1>
+      <nav class="space-x-4 hidden md:flex">
+        <a href="#bienvenida" class="hover:text-pink-600 transition">Inicio</a>
+        <a href="#productos" class="hover:text-pink-600 transition">Productos</a>
+        <a href="#beneficios" class="hover:text-pink-600 transition">Beneficios</a>
+        <a href="#contacto" class="hover:text-pink-600 transition">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- BIENVENIDA -->
+  <section id="bienvenida" class="text-center py-20 bg-gradient-to-r from-pink-200 to-pink-50">
+    <h2 class="text-5xl font-extrabold mb-4 text-pink-700">¡Descubre el sabor irresistible!</h2>
+    <p class="text-lg mb-8 text-gray-700">Fresas con crema, frescura y dulzura en cada cucharada.</p>
+    <img src="https://i.imgur.com/O0rPjYp.jpg" alt="Fresas con crema" class="mx-auto w-96 rounded-2xl shadow-2xl" />
+  </section>
+
+  <!-- PRODUCTOS -->
+  <section id="productos" class="py-20">
+    <h2 class="text-4xl font-bold text-center mb-12 text-pink-600">Nuestros Productos</h2>
+    <div class="flex justify-center">
+      <div class="bg-white p-6 rounded-2xl shadow-lg w-80 text-center hover:shadow-2xl transition-all">
+        <img src="fresas-removebg-preview.png" alt="Fresa con crema" class="rounded-lg mb-4" />
+        <h3 class="text-2xl font-semibold mb-2">Fresa con Crema Clásica</h3>
+        <p class="text-sm mb-4 text-gray-600">Fresas frescas, crema dulce, leche condensada.</p>
+        <a href="https://wa.me/50371385842?text=Hola%2C%20quiero%20agendar%20el%20producto%3A%20Fresa%20con%20crema" target="_blank"
+           class="mt-4 inline-block bg-pink-500 text-white px-6 py-2 rounded-full shadow-md hover:bg-pink-600 transition">
+          Agendar producto
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- BENEFICIOS -->
+  <section id="beneficios" class="py-20">
+    <h2 class="text-4xl font-bold text-center mb-10 text-pink-600">Beneficios de las Fresas con Crema</h2>
+    <div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-6 px-4">
+      <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition">🍓 Ricas en vitamina C</div>
+      <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition">💪 Fortalecen el sistema inmune</div>
+      <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition">❤️ Buenas para el corazón</div>
+      <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition">😋 ¡Deliciosas y refrescantes!</div>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <footer id="contacto" class="bg-pink-600 text-white py-12 text-center">
+    <h3 class="text-3xl font-semibold mb-4">¡Contáctanos!</h3>
+    <p class="mb-2">Instagram: <a href="https://instagram.com/tu_instagram" target="_blank" class="underline">@tu_instagram</a></p>
+    <p>WhatsApp: <a href="https://wa.me/50371385842" target="_blank" class="underline">+503 7130 5842</a></p>
+    <p class="mt-6 text-sm">Hecho con ❤️ por FresasDelicias</p>
+  </footer>
+
+</body>
+</html>
