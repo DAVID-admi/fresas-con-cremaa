@@ -18,6 +18,39 @@
         transform: translateY(0);
       }
     }
+    
+    /* Estilos para el video responsivo */
+    .video-container {
+      width: 100%;
+      max-width: 400px;
+      margin: 0 auto;
+      border-radius: 1rem;
+      overflow: hidden;
+      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    }
+    
+    .responsive-video {
+      width: 100%;
+      height: auto;
+      display: block;
+      object-fit: cover;
+    }
+    
+    /* Adaptación para móviles */
+    @media (max-width: 640px) {
+      .video-container {
+        max-width: 320px;
+        border-radius: 0.75rem;
+      }
+    }
+    
+    /* Adaptación para tablets */
+    @media (min-width: 641px) and (max-width: 1024px) {
+      .video-container {
+        max-width: 450px;
+        border-radius: 1.25rem;
+      }
+    }
   </style>
 </head>
 <body class="bg-gradient-to-b from-pink-50 to-white font-sans text-gray-800">
@@ -39,7 +72,22 @@
   <section id="bienvenida" class="text-center py-16 bg-gradient-to-r from-pink-200 to-pink-50 fade-in">
     <h2 class="text-4xl md:text-5xl font-extrabold mb-4 text-pink-700">¡Descubre el sabor irresistible!</h2>
     <p class="text-lg md:text-xl mb-8 text-gray-700">Fresas con crema, frescura y dulzura en cada cucharada.</p>
-    <img src="ChatGPT_Image_9_jul_2025__21_26_14-removebg-preview.png" alt="Fresas con crema" class="mx-auto w-72 md:w-96 rounded-2xl shadow-2xl" />
+    
+    <!-- VIDEO CONTAINER -->
+    <div class="video-container">
+      <video 
+        class="responsive-video" 
+        autoplay 
+        muted 
+        loop 
+        playsinline
+        preload="auto">
+        <source src="fresas.mp4" type="video/mp4">
+        <source src="tu-video-fresas.webm" type="video/webm">
+        <!-- Imagen de fallback si el video no carga -->
+        <img src="ChatGPT_Image_9_jul_2025__21_26_14-removebg-preview.png" alt="Fresas con crema" class="responsive-video" />
+      </video>
+    </div>
   </section>
 
   <!-- PRODUCTOS -->
@@ -89,6 +137,8 @@
 
 </body>
 </html>
+
+
 
 
 
